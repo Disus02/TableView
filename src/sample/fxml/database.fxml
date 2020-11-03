@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.ControllerDataBase">
+  <tabs>
+    <Tab text="Courses">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableCourses" prefHeight="377.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn fx:id="coursesId" prefWidth="25.0" text="id" />
+                      <TableColumn fx:id="coursesTitle" prefWidth="225.0" text="title" />
+                        <TableColumn fx:id="coursesLength" prefWidth="50.0" text="length" />
+                        <TableColumn fx:id="coursesDescription" prefWidth="300.0" text="description" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Lessons">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableLessons" prefHeight="374.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn fx:id="lessonsId" prefWidth="25.0" text="id" />
+                      <TableColumn fx:id="lessonsTeacher" prefWidth="50.0" text="teacher" />
+                        <TableColumn fx:id="lessonsCourses" prefWidth="50.0" text="course" />
+                        <TableColumn fx:id="lessonsRoom" prefWidth="50.0" text="room" />
+                        <TableColumn fx:id="lessonsDate" prefWidth="425.0" text="lessons_date" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Teachers">
+          <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tableTeachers" prefHeight="371.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn fx:id="teachersId" prefWidth="25.0" text="id" />
+                      <TableColumn fx:id="teachersName" prefWidth="250.0" text="name" />
+                        <TableColumn fx:id="teachersAddr" prefWidth="250.0" text="addr" />
+                        <TableColumn fx:id="teachersPhone" prefWidth="75.0" text="phone" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+          </content>
+      </Tab>
+      <Tab text="Users">
+          <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                  <children>
+                      <TableView fx:id="tableUser" prefHeight="374.0" prefWidth="600.0">
+                          <columns>
+                              <TableColumn fx:id="userId" prefWidth="25.0" text="id" />
+                              <TableColumn fx:id="userFirstName" prefWidth="75.0" text="firstname" />
+                              <TableColumn fx:id="userLastName" prefWidth="75.0" text="lastname" />
+                              <TableColumn fx:id="userEmail" prefWidth="200.0" text="email" />
+                              <TableColumn fx:id="userLogin" prefWidth="100.0" text="login" />
+                        <TableColumn fx:id="userPassword" prefWidth="125.0" text="password" />
+                          </columns>
+                      </TableView>
+                  </children></AnchorPane>
+          </content>
+      </Tab>
+  </tabs>
+</TabPane>
